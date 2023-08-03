@@ -1,0 +1,14 @@
+<%- include("partials/header"); -%>
+
+    <div class="success-grid-container">
+        <div class="success-flex-container">
+          <h1>Uh oh!</h1>
+          <p>There was a problem signing you up! Please try again later or contact the developer.</p>
+
+          <form action="/failure" method="post">
+            <button type="submit" name="button">Try again</button>
+          </form>
+        </div>
+    </div>
+
+<%- include("partials/footer"); -%>

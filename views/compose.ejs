@@ -1,0 +1,35 @@
+<%- include("partials/header"); -%>
+
+<div class="compose-grid-container">
+    <div class="compose-flex-container">
+        <div>
+            <h1>Compose</h1>
+        </div>
+        <div class="form-flex-container">
+
+            <form class="form-flex-container" action="/compose" method="post">
+                <label>Heading</label>
+                <input type="text" name="articleHeading">
+                <label>Introduction</label>
+                <textarea name="articleIntroduction" id="" cols="30" rows="5"></textarea>
+                <label>Paragraph1</label>
+                <textarea name="articleParagraph1" id="" cols="30" rows="5"></textarea>
+                <label>Paragraph2</label>
+                <textarea name="articleParagraph2" id="" cols="30" rows="5"></textarea>
+                <label>Paragraph3</label>
+                <textarea name="articleParagraph3" id="" cols="30" rows="5"></textarea>
+                <label>Paragraph4</label>
+                <textarea name="articleParagraph4" id="" cols="30" rows="5"></textarea>
+                <label>Conclusion</label>
+                <textarea name="articleConclusion" id="" cols="30" rows="5"></textarea>
+                <button type="submit" name="button">Publish</button>
+            </form>
+            
+        </div>
+        
+    </div>
+    
+</div>
+    
+
+<%- include("partials/footer"); -%>
